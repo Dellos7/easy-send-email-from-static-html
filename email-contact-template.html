@@ -1,0 +1,21 @@
+<section style='font-family: "Trebuchet MS", Helvetica, sans-serif'>
+<p>
+You've got a new message submitted from your contact form:
+</p>
+<? for (var key in data) { ?>
+    <? if(avoid[key]) continue ?>
+	<? var val = data[key]; ?>
+	<h4 style='text-transform: capitalize; margin-bottom: 0; padding-top: 10px; border-top: 1px solid black'>
+        <?= key ?>
+    </h4>
+    <div>
+         <?= val ?>
+     </div>
+<? } ?>
+<p style="border-top: 1px solid black; padding-top: 15px">
+You'd better respond it...
+</p>
+<p style="padding-top: 15px">
+Your contact form is placed at: <a href="<?= avoid['contact_form_url'] ?>"><?= avoid['contact_form_url'] ?></a>
+</p>
+</section>

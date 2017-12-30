@@ -1,0 +1,22 @@
+<section style='font-family: "Trebuchet MS", Helvetica, sans-serif'>
+<p>
+Hello! I have received an email from you through <a href="<?= avoid['contact_form_url'] ?>">my contact form</a> with the following information:
+</p>
+<? for (var key in data) { ?>
+    <? if(avoid[key]) continue ?>
+	<? var val = data[key]; ?>
+	<h4 style='text-transform: capitalize; margin-bottom: 0; padding-top: 10px; border-top: 1px solid black'>
+        <?= key ?>
+    </h4>
+    <div>
+         <?= val ?>
+     </div>
+<? } ?>
+<div style="border-top: 1px solid black; margin-top: 15px; padding-top: 15px">
+I will contact you as soon as possible. Please, if you don't know why you are receiving this email, let me know responding to this email.
+
+<p>Best regards.</p>
+
+<p><strong><?= avoid['send_email_to_name'] ?></strong></p>
+</div>
+</section>

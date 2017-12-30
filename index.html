@@ -1,0 +1,117 @@
+<html>
+
+<head>
+	<title>Contact form</title>
+	 <meta charset="UTF-8">
+
+	<style type="text/css">
+		.form-style{
+		    font: 95% Arial, Helvetica, sans-serif;
+		    max-width: 400px;
+		    margin: 10px auto;
+		    padding: 16px;
+		    background: #F7F7F7;
+		}
+		.form-style h1{
+		    /*background: #43D1AF;*/
+		    background: #ff9900;
+		    padding: 20px 0;
+		    font-size: 140%;
+		    font-weight: 300;
+		    text-align: center;
+		    color: #fff;
+		    margin: -16px -16px 16px -16px;
+		}
+		.form-style input[type="text"],
+		.form-style input[type="date"],
+		.form-style input[type="datetime"],
+		.form-style input[type="email"],
+		.form-style input[type="number"],
+		.form-style input[type="search"],
+		.form-style input[type="time"],
+		.form-style input[type="url"],
+		.form-style textarea,
+		.form-style select 
+		{
+		    -webkit-transition: all 0.30s ease-in-out;
+		    -moz-transition: all 0.30s ease-in-out;
+		    -ms-transition: all 0.30s ease-in-out;
+		    -o-transition: all 0.30s ease-in-out;
+		    outline: none;
+		    box-sizing: border-box;
+		    -webkit-box-sizing: border-box;
+		    -moz-box-sizing: border-box;
+		    width: 100%;
+		    background: #fff;
+		    margin-bottom: 4%;
+		    border: 1px solid #ccc;
+		    padding: 3%;
+		    color: #555;
+		    font: 95% Arial, Helvetica, sans-serif;
+		}
+		.form-style input[type="text"]:focus,
+		.form-style input[type="date"]:focus,
+		.form-style input[type="datetime"]:focus,
+		.form-style input[type="email"]:focus,
+		.form-style input[type="number"]:focus,
+		.form-style input[type="search"]:focus,
+		.form-style input[type="time"]:focus,
+		.form-style input[type="url"]:focus,
+		.form-style textarea:focus,
+		.form-style select:focus
+		{
+		    /*box-shadow: 0 0 5px #43D1AF;*/
+		    box-shadow: 0 0 5px #ff9900;
+		    padding: 3%;
+		    /*border: 1px solid #43D1AF;*/
+		    border: 1px solid #ff9900;
+		}
+
+		.form-style input[type="submit"],
+		.form-style input[type="button"]{
+		    box-sizing: border-box;
+		    -webkit-box-sizing: border-box;
+		    -moz-box-sizing: border-box;
+		    width: 100%;
+		    padding: 3%;
+		    /*background: #43D1AF;*/
+		    background: #ff9900;
+		    /*border-bottom: 2px solid #30C29E;*/
+		    border-bottom: 2px solid #e68a00;
+		    border-top-style: none;
+		    border-right-style: none;
+		    border-left-style: none;    
+		    color: #fff;
+		}
+		.form-style input[type="submit"]:hover,
+		.form-style input[type="button"]:hover{
+		    /*background: #2EBC99;*/
+		    background: #e68a00;
+		}
+	</style>
+
+</head>
+
+	<body>
+
+		<div class="form-style">
+			<h1>Contact Us</h1>
+			<form method="POST" action="https://script.google.com/macros/s/AKfycbyuo8-7FBuQoalMj90jIGZBNyMh5QZe7WorN82_O7bWmmcq6nSQ/exec">
+				<input type="text" name="name" placeholder="Your Name" required />
+				<input type="email" name="email" placeholder="Email Address" required />
+				<textarea name="message" placeholder="Type your Message" required></textarea>
+				<input name="success_url" type="hidden" value="https://dellos7.github.io/example-easy-send-email-from-static-html/success.html">
+		    	<input name="error_url" type="hidden" value="https://dellos7.github.io/example-easy-send-email-from-static-html/error.html">
+				<input name="send_email_copy" type="hidden" value="true">
+				<input name="send_email_to_name" type="hidden" value="Dellos7">
+				<input name="contact_form_url" type="hidden" value="https://dellos7.github.io/example-easy-send-email-from-static-html/index.html">
+		    	<input name="bitc_hp" type="text" value="" style="display: none">
+				<input type="submit" value="Send" />
+				<input style="margin-top: 15px" name="send_email_to" type="email" placeholder="Your email! The form will send an email to this address." value="" required>
+				<span style="color: red">This last field should be hidden in your form! switch to type="hidden"</span>
+			</form>
+		</div>
+
+	</body>
+
+</html>
